@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Smart Expense Tracker</title>
+    <title>Expense Tracker</title>
     <link rel="stylesheet" href="billercss.css">
 </head>
 <body>
@@ -15,7 +15,6 @@
 
         <div class="dashboard">
 
-            <!-- Add Expense -->
             <div class="card">
                 <h2>Add Expense</h2>
                 <input type="text" id="title" placeholder="Expense Title">
@@ -31,13 +30,11 @@
                 <button onclick="addExpense()">Add Expense</button>
             </div>
 
-            <!-- Summary -->
             <div class="card summary">
                 <h2>Total Expense</h2>
                 <p class="total">₹ <span id="total">0</span></p>
             </div>
 
-            <!-- Expense List -->
             <div class="card full">
                 <h2>Expense History</h2>
                 <ul id="expenseList"></ul>
@@ -49,3 +46,4 @@
     <script src="billerjs.js"></script>
 </body>
 </html>
+
