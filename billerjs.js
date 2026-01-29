@@ -36,63 +36,61 @@ function sortByAmount() {
     updateUI();
 }
 
-function updateUI() {
-    const expenseList = document.getElementById("expenseList");
-    expenseList.innerHTML = "";
-    totalExpense = 0;
+               function updateUI() {
+                      const expenseList = document.getElementById("expenseList");
+                        expenseList.innerHTML = "";
+                         totalExpense = 0;
 
-    expenses.forEach((exp, index) => {
-        totalExpense += exp.amount;
+                          expenses.forEach((exp, index) => {
+                         totalExpense += exp.amount;
 
-        const li = document.createElement("li");
-        li.innerHTML = `
-            <span>
-                <strong>${exp.title}</strong><br>
-                ${exp.category} | ${exp.date}
-            </span>
-            <div>
-                <strong>₹${exp.amount}</strong><br>
-                <button class="delete-btn" onclick="deleteExpense(${index})">Remove</button>
-            </div>
-        `;
-        expenseList.appendChild(li);
-    });
+                       const li = document.createElement("li");
+                        li.innerHTML = `
+                       <span>
+                       <strong>${exp.title}</strong><br>
+                        ${exp.category} | ${exp.date}
+                     </span>
+                               <div>
+                                       <strong>₹${exp.amount}</strong><br>
+                                          <button class="delete-btn" onclick="deleteExpense(${index})">Remove</button>
+                               </div>
+                              `;
+                      expenseList.appendChild(li);
+                  });
 
-    document.getElementById("total").innerText = totalExpense;
-}
+                 document.getElementById("total").innerText = totalExpense;
+          }
 
-let events = [];
+                    let events = [];
 
-// add new event
-function addEvent() {
-    const title = document.getElementById("eventTitle").value;
-    const date = document.getElementById("eventDate").value;
+                          function addEvent() {
+                                    const title = document.getElementById("eventTitle").value;
+                                    const date = document.getElementById("eventDate").value;
 
-    if (!title || !date) {
-        alert("Please fill all event fields");
-        return;
-    }
+                                     if (!title || !date) {
+                                        alert("Please fill all event fields");
+                                         return;
+                                            }
 
-    events.push({ title, date });
-    updateEvents();
+                              events.push({ title, date });
+                       updateEvents();
 
-    document.getElementById("eventTitle").value = "";
-    document.getElementById("eventDate").value = "";
-}
+                         document.getElementById("eventTitle").value = "";
+                         document.getElementById("eventDate").value = "";
+                                 }
 
-// refresh events list
-function updateEvents() {
-    const list = document.getElementById("eventList");
-    list.innerHTML = "";
+              function updateEvents() {
+                   const list = document.getElementById("eventList");
+                      list.innerHTML = "";
 
-    events.forEach(event => {
-        const li = document.createElement("li");
-        li.innerHTML = `
-            <span>
-                <strong>${event.title}</strong><br>
-                ${event.date}
-            </span>
-        `;
-        list.appendChild(li);
-    });
+                   events.forEach(event => {
+                    const li = document.createElement("li");
+                     li.innerHTML = `
+                          <span>
+                             <strong>${event.title}</strong><br>
+                           ${event.date}
+                         </span>
+                         `;
+              list.appendChild(li);
+               });
 }
