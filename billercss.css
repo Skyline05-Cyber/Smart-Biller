@@ -196,3 +196,16 @@ li span {
     object-fit: cover;
     z-index: -1;
 }
+
+.video-bg {
+  position: fixed;
+  inset: 0;
+  z-index: -1;
+  overflow: hidden;
+}
+
+.video-bg iframe {
+  width: 100vw;
+  height: 100vh;
+  object-fit: cover;
+}
