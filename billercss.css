@@ -10,8 +10,8 @@
 
 body {
     font-family: "Segoe UI", Roboto, Arial, sans-serif;
-    background: #3343699f;
-    color: #e5e7eb;
+    background: #0e1626;
+    color: #e6ebf2;
     min-height: 100vh;
 }
 
@@ -28,11 +28,11 @@ header {
 header h1 {
     font-size: 30px;
     font-weight: 600;
-    color: #004a69;
+    color: #6ee7ff;
 }
 
 header p {
-    color: #9ca3afed;
+    color: #b6c2d6;
     margin-top: 6px;
 }
 
@@ -44,20 +44,21 @@ header p {
 }
 
 .card {
-    background: #585d7499;
+    background: rgba(25, 35, 60, 0.7);
     border-radius: 16px;
     padding: 22px;
-    box-shadow: 0 10px 30px rgba(41, 39, 39, 0.6);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.55);
 }
 
 .card:hover {
     transform: translateY(-6px);
-    box-shadow: 0 18px 45px rgba(56, 189, 248, 0.15);
+    box-shadow: 0 18px 45px rgba(110, 231, 255, 0.18);
 }
 
 .card h2 {
     font-size: 18px;
     margin-bottom: 16px;
+    color: #eaf1ff;
 }
 
 .section {
@@ -69,27 +70,27 @@ input, select {
     padding: 11px 12px;
     margin-bottom: 12px;
     border-radius: 8px;
-    border: 1px solid #5e78a173;
+    border: 1px solid #2a3b63;
     font-size: 14px;
-    background: #343c6295;
-    color: #e5e7eb;
+    background: rgba(15, 25, 45, 0.85);
+    color: #e6ebf2;
 }
 
 input::placeholder {
-    color: #9ca3af;
+    color: #9fb0c9;
 }
 
 input:focus, select:focus {
     outline: none;
-    border-color: #2c5668a7;
-    box-shadow: 0 0 0 2px rgba(56, 189, 248, 0.35);
+    border-color: #6ee7ff;
+    box-shadow: 0 0 0 2px rgba(110, 231, 255, 0.35);
 }
 
 button {
     width: 100%;
     padding: 11px;
-    background: linear-gradient(135deg, #38bdf8, #22d3ee);
-    color: #303a63a8;
+    background: linear-gradient(135deg, #6ee7ff, #38bdf8);
+    color: #0b1220;
     font-weight: 500;
     border: none;
     border-radius: 10px;
@@ -98,12 +99,12 @@ button {
 
 button:hover {
     transform: translateY(-2px);
-    box-shadow: 0 8px 20px rgba(56, 189, 248, 0.4);
+    box-shadow: 0 8px 20px rgba(110, 231, 255, 0.45);
 }
 
 button:active {
     transform: translateY(0);
-    box-shadow: 0 4px 10px rgba(56, 191, 248, 0.216);
+    box-shadow: 0 4px 10px rgba(110, 231, 255, 0.25);
 }
 
 .summary {
@@ -114,7 +115,7 @@ button:active {
     font-size: 36px;
     font-weight: 700;
     margin-top: 10px;
-    color: #22c55e9a;
+    color: #4ade80;
 }
 
 .full {
@@ -128,15 +129,15 @@ button:active {
 }
 
 .controls button {
-    background: #020617;
-    color: #e5e7eb;
-    border: 1px solid #1e293b;
+    background: rgba(15, 25, 45, 0.9);
+    color: #e6ebf2;
+    border: 1px solid #2a3b63;
     font-size: 13px;
 }
 
 .controls button:hover {
-    background: #0f173c7e;
-    box-shadow: 0 0 12px rgba(56, 189, 248, 0.25);
+    background: rgba(20, 35, 65, 0.9);
+    box-shadow: 0 0 12px rgba(110, 231, 255, 0.3);
 }
 
 ul {
@@ -146,18 +147,18 @@ ul {
 li {
     padding: 14px;
     margin-bottom: 10px;
-    background: #02061795;
+    background: rgba(15, 25, 45, 0.85);
     border-radius: 12px;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    border-left: 4px solid #38bdf8;
+    border-left: 4px solid #6ee7ff;
     cursor: pointer;
 }
 
 li:hover {
     transform: scale(1.01);
-    box-shadow: 0 6px 16px rgba(0, 0, 0, 0.334);
+    box-shadow: 0 6px 16px rgba(0, 0, 0, 0.45);
 }
 
 li span {
@@ -166,8 +167,8 @@ li span {
 }
 
 .delete-btn {
-    background: #ef4444a1;
-    color: white;
+    background: rgba(248, 113, 113, 0.85);
+    color: #ffffff;
     border: none;
     padding: 6px 10px;
     font-size: 12px;
@@ -176,7 +177,7 @@ li span {
 }
 
 .delete-btn:hover {
-    background: #dc262685;
+    background: rgba(239, 68, 68, 0.95);
     box-shadow: 0 0 12px rgba(239, 68, 68, 0.6);
     transform: scale(1.05);
 }
